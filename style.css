@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /*COLORS*/
+  --white-bg: #efefef;
+  --red: #ff5374;
+  --grey: #535971;
+  --lines: #e6e6f0;
+  --input-bg: #fafafc;
+
+  /*FONTS*/
+  --ff-titles: 'Staatliches', cursive;
+  --ff-text: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--white-bg);
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  color: white;
+  margin-top: 14rem;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  font-family: var(--ff-titles);
+  margin-top: 1.8rem;
+}
+
+header p {
+  font-family: var(--ff-text);
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 41.7rem;
+}
+
+main .form-wrapper {
+  background: white;
+  padding: 6.4rem;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: 5.8rem;
+}
+
+body::before {
+  content: '';
+  background-color: var(--grey);
+  width: 100%;
+  height: 43.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+fieldset {
+  border: none;
+  font-family: var(--ff-text);
+  color: var(--grey);
+  margin-top: 3rem;
+}
+
+fieldset legend {
+  padding-bottom: 1.6rem;
+  font-family: var(--ff-titles);
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid var(--lines);
+  width: 100%;
+}
+
+input {
+  background: var(--input-bg);
+  border: 1px solid var(--white-bg);
+  color: var(--grey);
+  border-radius: 0.8rem;
+  min-height: 5.6rem;
+  align-items: center;
+  padding: 2.4rem;
+}
+
+input:invalid {
+  border: 1px solid var(--red);
+}
+
+.input-wrapper label {
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.input-wrapper label span {
+  color: #535971;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #c1bccc;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+  width: 100%;
+}
+
+.two-columns {
+  display: flex;
+  gap: 2.2rem;
+  width: 100%;
+}
+
+.two-columns-a {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.three-columns {
+  display: flex;
+  gap: 3.2rem;
+}
+
+main .send-wrapper {
+  background-color: var(--grey);
+  border-radius: 0 0 2rem 2rem;
+  padding: 5.2rem 7.1rem;
+  margin-bottom: 36.6rem;
+}
+
+.send-wrapper .button {
+  border: none;
+  background-color: var(--red);
+  color: white;
+  border-radius: 2rem;
+  width: 100%;
+  font-family: var(--ff-titles);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.send-wrapper .button:hover {
+  filter: brightness(1.3);
+}
